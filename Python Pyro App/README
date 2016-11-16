@@ -1,0 +1,7 @@
+#Pyro 4 Warehouse Example
+
+Sample from https://pythonhosted.org/Pyro4/tutorials.html#building-a-warehouse
+
+Needs Python and Pyro4 installed
+
+>pip install Pyro4
