@@ -21,6 +21,9 @@ class Server implements ServerInterface {
 			observer.receiveNotify("Hello World!");
 		}
 	}
+	public void notifyObserver(Observer o){
+		o.receiveNotify("Hello World!");
+	}
 
 	public void notifyObservers(String message){
 		for (Observer observer : listOfObservers){

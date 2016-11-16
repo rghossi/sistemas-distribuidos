@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-class Observer implements Serializable {
+class Observer implements ClientInterface {
 	private String name;
 	private Server server;
 

@@ -8,9 +8,10 @@ public class ClientMain {
         try {
             Registry registry = LocateRegistry.getRegistry(host);
             ServerInterface stub = (ServerInterface) registry.lookup("Hello");
-            Observer observer = new Observer(host);
+            Observer observer = new Observer("Observer");
             stub.subscribe(observer);
-            stub.notifyObservers();
+            // stub.notifyObservers();
+            stub.notifyObserver(observer);
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());
             e.printStackTrace();
